@@ -15,19 +15,18 @@
   -->
   <script>
     const CONFIG = {
-      name: "Hi, I'm Colleen ",
+      name: "Hi, I'm Colleen",
       title: "Data Analyst",
       description: "I turn raw data into clear insights that help support smarter decisions and business growth.",
       accentColor: "#00C896",
 
       social: {
-        email: "https://mail.google.com/mail/?view=cm&to=colleenkawira@gmail.com",
+        email: "colleenkawira@gmail.com",
         linkedin: "https://www.linkedin.com/in/colleen-patience-k-641a84337/",
         github: "https://github.com/kawiraaa",
       },
 
-      aboutMe: `I am a data analyst passionate about turning raw data into meaningful insights that support better decision-making. I work with data cleaning, analysis, and visualization to identify patterns, trends, and actionable insights. I enjoy using tools like Python, SQL, and Excel to solve real-world problems and communicate findings clearly through reports and dashboards.
-`,
+      aboutMe: "I am a data analyst passionate about turning raw data into meaningful insights that support better decision-making. I work with data cleaning, analysis, and visualization to identify patterns, trends, and actionable insights. I enjoy using tools like Python, SQL, and Excel to solve real-world problems and communicate findings clearly through reports and dashboards.",
 
       skills: [
         "SQL", "Python", "Excel", "Looker Studio"
@@ -38,11 +37,11 @@
           name: "Telehealth Patient Experience Analysis",
           description: "An analysis of telehealth patient experience data to identify key drivers of satisfaction and provide recommendations for improving service efficiency and scalability.",
           link: "https://github.com/kawiraaa/telehealth-",
-          skills: ["excel"]
+          skills: ["Excel"]
         },
         {
           name: "Better Health Pharmacy Sales Analysis",
-          description: "This project analyzes Q4 2025 sales data for Better Health Pharmacy to identify key trends in revenue, product performance, and customer behavior. It uses SQL, Python (Pandas), and Looker Studio to transform raw sales data into actionable business insights for better decision-making.",
+          description: "This project analyzes Q4 2025 sales data for Better Health Pharmacy to identify key trends in revenue, product performance, and customer behavior. It uses SQL, Python and Looker Studio to transform raw sales data into actionable business insights for better decision-making.",
           link: "https://github.com/kawiraaa/pharma-sales",
           skills: ["Python", "SQL", "Looker Studio"]
         },
@@ -50,7 +49,7 @@
           name: "Project Three",
           description: "A data visualization dashboard that transforms raw CSVs into interactive, shareable charts.",
           link: "https://github.com/yourusername/project-three",
-          skills: ["SQL", "Looker studio"]
+          skills: ["SQL", "Looker Studio"]
         }
       ]
     };
@@ -84,7 +83,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -111,7 +109,6 @@
     }
     .nav-links a:hover { color: var(--text); }
 
-    /* ── HERO ── */
     #hero {
       min-height: 100vh;
       display: flex; flex-direction: column; justify-content: center;
@@ -184,10 +181,7 @@
       opacity: 0;
       animation: fadeUp 0.6s ease 0.6s forwards;
     }
-    .scroll-line {
-      width: 48px; height: 1px;
-      background: var(--accent); opacity: 0.5;
-    }
+    .scroll-line { width: 48px; height: 1px; background: var(--accent); opacity: 0.5; }
     .scroll-hint span {
       font-family: var(--font-mono);
       font-size: 11px;
@@ -195,7 +189,6 @@
       letter-spacing: 0.12em;
     }
 
-    /* ── SECTIONS ── */
     section {
       max-width: 900px;
       margin: 0 auto;
@@ -216,23 +209,15 @@
       font-size: clamp(1.8rem, 4vw, 2.4rem);
       color: var(--text);
     }
-    .section-divider {
-      flex: 1; height: 1px;
-      background: var(--border);
-    }
+    .section-divider { flex: 1; height: 1px; background: var(--border); }
 
-    /* ── ABOUT ── */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       align-items: start;
     }
-    .about-text {
-      font-size: 1rem;
-      color: var(--muted);
-      white-space: pre-line;
-    }
+    .about-text { font-size: 1rem; color: var(--muted); }
     .about-text p { margin-bottom: 1rem; }
 
     .skills-title {
@@ -242,9 +227,7 @@
       letter-spacing: 0.1em;
       margin-bottom: 1rem;
     }
-    .skills-list {
-      display: flex; flex-wrap: wrap; gap: 0.5rem;
-    }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .skill-tag {
       padding: 0.35rem 0.85rem;
       border: 1px solid var(--border);
@@ -255,12 +238,8 @@
       transition: border-color 0.2s, color 0.2s;
       cursor: default;
     }
-    .skill-tag:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
+    .skill-tag:hover { border-color: var(--accent); color: var(--accent); }
 
-    /* ── PROJECTS ── */
     .projects-list { display: flex; flex-direction: column; gap: 1.5rem; }
     .project-card {
       display: grid;
@@ -273,10 +252,7 @@
       text-decoration: none;
       transition: border-color 0.25s, background 0.25s;
     }
-    .project-card:hover {
-      border-color: var(--accent);
-      background: var(--bg3);
-    }
+    .project-card:hover { border-color: var(--accent); background: var(--bg3); }
     .project-num {
       font-family: var(--font-display);
       font-size: 3rem;
@@ -303,12 +279,7 @@
       flex-shrink: 0;
     }
     .project-card:hover .project-name svg { opacity: 1; }
-    .project-desc {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-      line-height: 1.65;
-    }
+    .project-desc { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.65; }
     .project-skills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .project-skill {
       padding: 0.2rem 0.65rem;
@@ -320,7 +291,6 @@
       color: var(--muted);
     }
 
-    /* ── FOOTER ── */
     footer {
       text-align: center;
       padding: 3rem 2rem;
@@ -331,7 +301,6 @@
     }
     footer span { color: var(--accent); }
 
-    /* ── DECORATIVE ── */
     .grid-overlay {
       pointer-events: none;
       position: fixed; inset: 0; z-index: 0;
@@ -343,7 +312,6 @@
       opacity: 0.5;
     }
 
-    /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -354,7 +322,6 @@
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
       nav { padding: 1rem 1.25rem; }
       .nav-links { gap: 1.25rem; }
@@ -368,19 +335,17 @@
 <body>
   <div class="grid-overlay" aria-hidden="true"></div>
 
-  <!-- NAV -->
   <nav id="navbar">
-    <a class="nav-logo" href="#hero" id="nav-logo">&lt;/&gt;</a>
+    <a class="nav-logo" href="#hero" id="nav-logo">CK</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
   <div id="hero">
     <p class="hero-tag">// hello world</p>
-    <h1 class="hero-name" id="hero-name">Loading…</h1>
+    <h1 class="hero-name" id="hero-name"></h1>
     <p class="hero-title" id="hero-title"></p>
     <p class="hero-desc" id="hero-desc"></p>
     <div class="hero-social" id="hero-social"></div>
@@ -390,7 +355,6 @@
     </div>
   </div>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="section-label reveal">
       <span class="section-label-num">01</span>
@@ -406,7 +370,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="section-label reveal">
       <span class="section-label-num">02</span>
@@ -416,95 +379,86 @@
     <div class="projects-list" id="projects-list"></div>
   </section>
 
-  <!-- FOOTER -->
   <footer id="footer"></footer>
 
   <script>
-    // ── Apply accent color ──
     document.documentElement.style.setProperty('--accent', CONFIG.accentColor);
-
-    // ── Nav logo ──
-    document.getElementById('nav-logo').textContent = CONFIG.name
-      .split(' ').map(w => w[0]).join('') || '</>';
-
-    // ── Hero ──
+    document.title = CONFIG.name + ' - ' + CONFIG.title;
     document.getElementById('hero-name').textContent = CONFIG.name;
     document.getElementById('hero-title').textContent = CONFIG.title;
     document.getElementById('hero-desc').textContent = CONFIG.description;
-    document.title = `${CONFIG.name} — ${CONFIG.title}`;
 
-    // Social icons
-    const icons = {
-      email: `<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>`,
-      linkedin: `<svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4M11 10v7"/></svg>`,
-      github: `<svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>`
+    var icons = {
+      email: '<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>',
+      linkedin: '<svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4M11 10v7"/></svg>',
+      github: '<svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>'
     };
-    const social = CONFIG.social;
-    const socialEl = document.getElementById('hero-social');
+
+    var social = CONFIG.social;
+    var socialEl = document.getElementById('hero-social');
+
     if (social.email) {
-      socialEl.innerHTML += `<a class="social-btn" href="mailto:${social.email}">${icons.email} Email</a>`;
+      var emailLink = 'https://mail.google.com/mail/?view=cm&to=' + social.email;
+      socialEl.innerHTML += '<a class="social-btn" href="' + emailLink + '" target="_blank" rel="noopener">' + icons.email + ' Email</a>';
     }
     if (social.linkedin) {
-      socialEl.innerHTML += `<a class="social-btn" href="${social.linkedin}" target="_blank" rel="noopener">${icons.linkedin} LinkedIn</a>`;
+      socialEl.innerHTML += '<a class="social-btn" href="' + social.linkedin + '" target="_blank" rel="noopener">' + icons.linkedin + ' LinkedIn</a>';
     }
     if (social.github) {
-      socialEl.innerHTML += `<a class="social-btn" href="${social.github}" target="_blank" rel="noopener">${icons.github} GitHub</a>`;
+      socialEl.innerHTML += '<a class="social-btn" href="' + social.github + '" target="_blank" rel="noopener">' + icons.github + ' GitHub</a>';
     }
 
-    // ── About ──
-    const aboutEl = document.getElementById('about-text');
-    CONFIG.aboutMe.trim().split('\n').forEach(line => {
-      if (line.trim()) {
-        const p = document.createElement('p');
-        p.textContent = line.trim();
-        aboutEl.appendChild(p);
-      }
+    var aboutEl = document.getElementById('about-text');
+    var p = document.createElement('p');
+    p.textContent = CONFIG.aboutMe;
+    aboutEl.appendChild(p);
+
+    var skillsEl = document.getElementById('skills-list');
+    CONFIG.skills.forEach(function(skill) {
+      var span = document.createElement('span');
+      span.className = 'skill-tag';
+      span.textContent = skill;
+      skillsEl.appendChild(span);
     });
 
-    // ── Skills ──
-    const skillsEl = document.getElementById('skills-list');
-    CONFIG.skills.forEach(skill => {
-      skillsEl.innerHTML += `<span class="skill-tag">${skill}</span>`;
+    var projectsEl = document.getElementById('projects-list');
+    CONFIG.projects.forEach(function(project, i) {
+      var num = String(i + 1).padStart(2, '0');
+      var card = document.createElement('a');
+      card.className = 'project-card reveal';
+      card.href = project.link;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      var skillTags = project.skills.map(function(s) {
+        return '<span class="project-skill">' + s + '</span>';
+      }).join('');
+      card.innerHTML =
+        '<div class="project-num">' + num + '</div>' +
+        '<div>' +
+          '<p class="project-name">' + project.name +
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+          '</p>' +
+          '<p class="project-desc">' + project.description + '</p>' +
+          '<div class="project-skills">' + skillTags + '</div>' +
+        '</div>';
+      projectsEl.appendChild(card);
     });
 
-    // ── Projects ──
-    const projectsEl = document.getElementById('projects-list');
-    CONFIG.projects.forEach((project, i) => {
-      const num = String(i + 1).padStart(2, '0');
-      projectsEl.innerHTML += `
-        <a class="project-card reveal" href="${project.link}" target="_blank" rel="noopener">
-          <div class="project-num">${num}</div>
-          <div>
-            <p class="project-name">
-              ${project.name}
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </p>
-            <p class="project-desc">${project.description}</p>
-            <div class="project-skills">
-              ${project.skills.map(s => `<span class="project-skill">${s}</span>`).join('')}
-            </div>
-          </div>
-        </a>`;
-    });
-
-    // ── Footer ──
     document.getElementById('footer').innerHTML =
-      `<p>Designed &amp; built by <span>${CONFIG.name}</span> &mdash; ${new Date().getFullYear()}</p>`;
+      '<p>Designed &amp; built by <span>' + CONFIG.name + '</span> &mdash; ' + new Date().getFullYear() + '</p>';
 
-    // ── Scroll reveal ──
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
         if (e.isIntersecting) {
           e.target.classList.add('visible');
           observer.unobserve(e.target);
         }
       });
     }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
 
-    // ── Nav shrink on scroll ──
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', function() {
+      var nav = document.getElementById('navbar');
       nav.style.padding = window.scrollY > 50 ? '0.65rem 2.5rem' : '1.1rem 2.5rem';
     });
   </script>
